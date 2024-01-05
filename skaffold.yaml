@@ -1,0 +1,12 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+profiles:
+  - name: test
+    deploy:
+      helm:
+        releases:
+          - name: test
+            chartPath: ./helm
+            createNamespace: true
+            namespace: test
+            wait: true
