@@ -1,0 +1,8 @@
+{
+  "builds": [
+    {
+      "imageName": "nginx",
+      "tag": "nginx:latest"
+    }
+  ]
+}
